@@ -16,6 +16,7 @@ public class Dealer {
 	}
 	
 	public int exctractNumber() {
+		// Creo un numero casuale da 0 a 89 che uso come indice per la lista dinamica
 		int index = (int)(Math.random()*(this.numbers.size()-1));
 		int num = this.numbers.get(index);
 		this.numbers.remove(index);
