@@ -98,7 +98,9 @@ public class Main {
 		System.out.println(s1.getIndex("Come va"));
 		System.out.println(s1.duplicateValues());
 		System.out.println(StringProcessor.equals(v3, v4));
-
+		
+		double num = 300.56;
+		System.out.println(num);
 	}
 
 }
