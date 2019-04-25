@@ -39,6 +39,17 @@ public class TestApp {
 		s1.setLength(15);
 		System.out.println(s1.getColor());
 		System.out.println(s1);
+		
+		Shape[] shapes = {c1, c2, c3, r1, r2, r3, s1, s2, s3};
+		
+		for(Shape shape : shapes) {
+			System.out.println(shape);
+			if(shape instanceof Circle) {
+				Circle c = (Circle)shape;
+				System.out.println(c.getRadius());
+			}
+		}
+		
 	}
 
 }
