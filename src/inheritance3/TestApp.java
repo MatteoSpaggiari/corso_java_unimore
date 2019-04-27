@@ -47,6 +47,12 @@ public class TestApp {
 			if(shape instanceof Circle) {
 				Circle c = (Circle)shape;
 				System.out.println(c.getRadius());
+			} else if(shape instanceof Rectangle) {
+				Rectangle r = (Rectangle)shape;
+				System.out.println(r.getWidth());
+			} else if(shape instanceof Square) {
+				Square s = (Square)shape;
+				System.out.println(s.getSide());
 			}
 		}
 		
