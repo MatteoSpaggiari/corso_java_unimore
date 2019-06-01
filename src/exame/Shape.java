@@ -1,26 +1,15 @@
 package exame;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public abstract class Shape implements Comparable<Shape> {
 
-	protected List<Shape> shapes;
 	protected double width;
 	protected double height;
 	protected double posX;
 	protected double posY;
 	protected ShapeContainer container;
-	
-	public Shape() {
-		super();
-		shapes = new ArrayList<Shape>();
-		width = 0;
-		height = 0;
-		posX = 0;
-		posY = 0;
-	}
 
 	public double getWidth() {
 		return container.getWidth();
@@ -38,7 +27,7 @@ public abstract class Shape implements Comparable<Shape> {
 		return container.getVertex().getY();
 	}
 	
-	protected abstract void shapeContainer(); 
+	protected abstract void calcShapeContainer(); 
 	
 	public int compareTo(Shape other) {
 		return (container.getArea() > other.container.getArea()) ? 1 : -1;

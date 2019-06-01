@@ -5,9 +5,7 @@ public class ShapeContainer {
 	private double width;
 	private double height;
 	private Point vertex;
-	
-	
-	
+		
 	public ShapeContainer() {
 		super();
 	}

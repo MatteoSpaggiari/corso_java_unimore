@@ -31,7 +31,6 @@ public class TestApp {
 		System.out.println(c3.getPosition(shapes));
 		System.out.println(c4.getPosition(shapes));
 		
-		Collections.sort(shapes);
 		System.out.println(shapes);
 		
 		System.out.println(c5.equals(c1));
@@ -42,6 +41,10 @@ public class TestApp {
 		System.out.println(c4);
 		System.out.println(c5);
 		
+		c2.setRadius(10);
+		
+		System.out.println(c2.getPosition(shapes));
+		System.out.println(shapes);
 	}
 
 }

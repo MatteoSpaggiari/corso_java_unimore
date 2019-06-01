@@ -9,14 +9,14 @@ public class Circle extends Shape {
 		super();
 		this.center = center;
 		this.radius = radius;
-		shapeContainer();
+		calcShapeContainer();
 	}
 
 	public Circle(double radius) {
 		super();
 		center = new Point(0,0);
 		this.radius = radius;
-		shapeContainer();
+		calcShapeContainer();
 	}
 
 	public Point getCenter() {
@@ -33,10 +33,11 @@ public class Circle extends Shape {
 
 	public void setRadius(double radius) {
 		this.radius = radius;
+		calcShapeContainer();
 	}
 	
 	@Override
-	protected void shapeContainer() {
+	protected void calcShapeContainer() {
 		container = new ShapeContainer();
 		container.setWidth(radius*2);
 		container.setHeight(radius*2);
